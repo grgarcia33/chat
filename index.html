@@ -1,56 +1,84 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebChat AI Agent Test</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f6f9;
-            margin: 0;
-            padding: 40px;
-            text-align: center;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
-        h1 {
-            color: #1d2733;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        p {
-            color: #56627c;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-        .status-badge {
-            display: inline-block;
-            background-color: #e6f4ea;
-            color: #137333;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 600;
-            margin-top: 15px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Test Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 40px;
+    }
+    header div {
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    main {
+      text-align: center;
+      padding: 30px 20px;
+    }
+    h1 {
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .illustration {
+      max-width: 100%;
+      height: auto;
+      max-height: 450px;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    footer a {
+      color: #004080;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <img src="https://d3luennr5dcgcs.cloudfront.net/cisco-training/ai-agent/surfcar.png" alt="Surf Shack Logo" />
+    <div>Technical Training Excellence</div>
+  </header>
 
-    <div class="container">
-        <h1>Student 08 Test Success!</h1>
-        <p>El widget de chat cargará automáticamente en la esquina inferior derecha de esta página.</p>
-        <div class="status-badge">● Agente en línea</div>
-    </div>
+  <main>
+    <h1>Student 08 Test Success!</h1>
+    <img
+      class="illustration"
+      src="https://d3luennr5dcgcs.cloudfront.net/cisco-training/ai-agent/surfcar.png"
+      alt="Surf Car Sunset"
+    />
+  </main>
 
-    <!-- INICIO SCRIPT WEBEX ENGAGE -->
-    <div id="divicw" data-bind="B3E1D28C-DFEA-4FDA-8E5F-058C6D60B100" data-org="" data-guid="bf5f802d-afdb-42cb-94d8-6a5d28ed6aa7"></div>
-    <script>
-      var i={t:function(){try{var e=document.getElementById("divicw"),t=document.createElement("script");t.src="https://chat-widget.produs1.ciscoccservice.com/js/imichatinit.js?t="+new Date().toISOString(),e.insertAdjacentElement("
+  <footer>
+    &copy; Sunset Learning Institute | <a href="https://www.sunsetlearning.com" target="_blank">sunsetlearning.com</a>
+  </footer>
+
+  <!-- Put Chat Widget Below -->
+  <div id="divicw" data-bind="B3E1D28C-DFEA-4FDA-8E5F-058C6D60B100" data-org="" data-guid="bf5f802d-afdb-42cb-94d8-6a5d28ed6aa7"></div>
+  <script>
+    var i={t:function(){try{var e=document.getElementById("divicw"),t=document.createElement("script");t.src="https://chat-widget.produs1.ciscoccservice.com/js/imichatinit.js?t="+new Date().toISOString(),e.insertAdjacentElement("afterend",t),t.addEventListener("load",function(){console.log(new Date().toISOString(),"Livechat script loaded successfully!")}),t.addEventListener("error",function(){console.log(new Date().toISOString(),"Error loading Livechat script");i.o(e)})}catch(e){console.error(e)}},o:function(e){e.insertAdjacentHTML("afterend",'<iframe id="tls_al_frm" frameborder="0" style="overflow:hidden;height:208px;width:394px;position:fixed;display:block;right:48px;bottom:12px;z-index:99999;display:none;"></iframe>');var t=document.getElementById("tls_al_frm"),n=t.contentWindow,d=n.document;d.open();d.write("<!doctype html><html><head><meta charset='utf-8'><title>Untitled Document</title><style>body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#99a0b0;font-size:14px}.popover__content{background-color:#fbfbfe;padding:1.5rem;border-radius:5px;width:300px;box-shadow:0 2px 5px 0 rgba(0,0,0,0.26);position:relative}.popover__message{font-weight:600;color:#56627c;font-size:16px}.pull-left{float:left}.clearfix{clear:both}.hdr-txt{width:218px;margin-top:3px}.para-txt a{text-decoration:none;color:#005cde}.close-btn{position:absolute;right:15px;top:15px}.close-btn a{text-decoration:none;font-weight:400;color:#56627c;font-size:16px}</style></head><body><div class='popover__content'><div class='close-btn'><a href='#' onclick='closeTLSAlert()'>X</a></div><div class='popover__message'><div class='pull-left hdr-txt'>This browser version is not supported on LiveChat.</div></div><div class='clearfix'></div><p class='para-txt'>Please update your browser to the latest version and re-open the website to access the widget.</p></div><script>function closeTLSAlert(){window.parent.postMessage({key:'close_tls_alert',value:'close_tls_alert',action:'close_tls_alert'},'*');}<\/script></body></html>");d.close();t.style.display='block';window.addEventListener('message',function(e){'close_tls_alert'===e.data.action&&i.s()})},s:function(){var e=document.getElementById('tls_al_frm');e&&e.remove()}};i.t();
+  </script>
+  <!-- Chat Widget Above -->
+</body>
+</html>
